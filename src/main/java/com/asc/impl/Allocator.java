@@ -27,11 +27,11 @@ public class Allocator {
 			//fill aisle in each section
 			populatedCount = PopulateSeating(seating,SeatType.AISLE,startingNumber,totalRows,noOfPassengers);
 			startingNumber= startingNumber+populatedCount;
-			if(startingNumber >= noOfPassengers) break;
+			if(startingNumber > noOfPassengers) break;
 			// fill window in each section
 			populatedCount = PopulateSeating(seating,SeatType.WINDOW,startingNumber,totalRows,noOfPassengers);
 			startingNumber= startingNumber+populatedCount;
-			if(startingNumber >= noOfPassengers) break;
+			if(startingNumber > noOfPassengers) break;
 			//fill middle in each section
 			populatedCount = PopulateSeating(seating,SeatType.MIDDLE,startingNumber,totalRows,noOfPassengers);
 			startingNumber= startingNumber+populatedCount;
